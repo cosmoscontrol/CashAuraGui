@@ -1,0 +1,9 @@
+while wait() do
+for i,v in pairs(game:GetService("Workspace").Ignored.Drop:GetChildren()) do
+    if v.Name == 'MoneyDrop' and (game.Players.LocalPlayer.Character.PrimaryPart.Position - v.Position).Magnitude  < 12 then
+        
+fireclickdetector(v.ClickDetector)
+    end
+end
+
+end
